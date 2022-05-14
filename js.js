@@ -6,6 +6,7 @@ var uname = document.getElementById('name');
 var pa = document.querySelector('.pass');
 password.addEventListener('keyup', function(){
     var pw = password.value;
+    
     if(this.value === "")
     {
         document.querySelector('.showMessage1').style.display = "flex";
@@ -31,6 +32,7 @@ password.addEventListener('keyup', function(){
     {
         document.querySelector('.alertbox2').style.visibility="hidden";
     }
+
 }
 })
 
@@ -88,11 +90,18 @@ pa.addEventListener('keyup', ()=>{
 })
 function ValidationEvent(){
     var pw = password.value;
+    var numbers = /[0-9]/g;
     if(uname.value === "")
     {
        document.querySelector('.alertbox').style.visibility="visible";
        return false;
       
+    }
+    if(password.value === "")
+    {
+        document.querySelector('.alertbox1').style.visibility="visible";
+        return false;
+        
     }
     if(pw.length < 8)
     {
@@ -100,11 +109,10 @@ function ValidationEvent(){
         return false;
        
     }
-    if(password.value === "")
+    if(!password.value.match(numbers))
     {
-        document.querySelector('.alertbox1').style.visibility="visible";
+        document.querySelector('.alertbox4').style.visibility="visible";
         return false;
-        
     }
    if(pa.value === "")
     {

@@ -343,7 +343,35 @@ input::placeholder{
     border-right: 26px solid white;
     border-bottom: 19px solid transparent;
 }
-@keyframes animate1 {
+.alertbox4{
+    width: 200px;
+    text-align: center;
+    background: rgba(255, 255, 255);
+    padding: 10px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 16px;
+    color: #000;
+    position: absolute;
+    right: -190px;
+    top: 160px;
+    visibility: hidden;
+}
+.alertbox4::before
+{
+    content: "";
+    position: absolute;
+    right: 99%;
+    top: 9px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-right: 26px solid white;
+    border-bottom: 19px solid transparent;
+}
+/* @keyframes animate1 {
     0%,100%{
         transform: translateY(-20px);
        
@@ -367,4 +395,4 @@ input::placeholder{
     50%{
         transform: translateY(40px);
     }
-}
+} */
