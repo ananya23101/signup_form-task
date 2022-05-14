@@ -3,10 +3,11 @@ var password = document.querySelector('.password');
 var passVisible = document.querySelector('.icon');
 var pasHidden = document.querySelector('.iconhidden');
 var uname = document.getElementById('name');
+var emailId = document.querySelector('.email');
 var pa = document.querySelector('.pass');
 password.addEventListener('keyup', function(){
     var pw = password.value;
-    
+    var numbers = /[0-9]/g;
     if(this.value === "")
     {
         document.querySelector('.showMessage1').style.display = "flex";
@@ -32,10 +33,23 @@ password.addEventListener('keyup', function(){
     {
         document.querySelector('.alertbox2').style.visibility="hidden";
     }
-
+    if(password.value.match(numbers))
+    {
+        document.querySelector('.alertbox4').style.visibility="hidden";
+    }
 }
 })
-
+emailId.addEventListener('keyup', () =>{
+    if(emailId.value === "")
+    {
+        document.querySelector('.showmessage1').style.display = "flex";
+        document.querySelector('.alertbox5').style.visibility="hidden";
+    }
+    else{
+        document.querySelector('.showmessage1').style.display = "none";
+    document.querySelector('.alertbox5').style.visibility="hidden";
+    }
+})
 var uname = document.getElementById('name');
 uname.addEventListener('keyup', function(){
    if(this.value === "")
@@ -91,11 +105,17 @@ pa.addEventListener('keyup', ()=>{
 function ValidationEvent(){
     var pw = password.value;
     var numbers = /[0-9]/g;
+    var validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if(uname.value === "")
     {
        document.querySelector('.alertbox').style.visibility="visible";
        return false;
       
+    }
+    if(!emailId.value.match(validEmail))
+    {
+        document.querySelector('.alertbox5').style.visibility="visible";
+        return false;
     }
     if(password.value === "")
     {
@@ -118,6 +138,10 @@ function ValidationEvent(){
     {
         document.querySelector('.alertbox3').style.visibility="visible";
         return false;
+    }
+    if(password.value!=pa.value)
+    {
+        return false
     }
     return true;
 }
