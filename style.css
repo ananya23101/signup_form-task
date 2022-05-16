@@ -402,7 +402,7 @@ input::placeholder{
     border-right: 26px solid white;
     border-bottom: 19px solid transparent;
 }
-/* @keyframes animate1 {
+@keyframes animate1 {
     0%,100%{
         transform: translateY(-20px);
        
@@ -426,7 +426,174 @@ input::placeholder{
     50%{
         transform: translateY(40px);
     }
-} */
-@media screen and (max-width: 800px) {
-    
+}
+@media screen and (max-width: 800px){
+    .alertbox{
+        width: 200px;
+        text-align: center;
+        background: rgba(255, 255, 255);
+        padding: 10px 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        right: 107px;
+        top: 170px;
+       visibility: hidden;
+    }
+    .alertbox::before{
+        content: "";
+        position: absolute;
+        right: 40%;
+        top: -100%;
+        width: 0;
+        height: 0;
+        border-left: 19px solid transparent;
+        border-bottom: 26px solid white;
+        border-right: 19px solid transparent;
+    }
+    .alertbox5{
+        width: 200px;
+        text-align: center;
+        background: rgba(255, 255, 255);
+        padding: 10px 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        right: 107px;
+        top: 236px;
+       visibility: hidden;
+    }
+    .alertbox5::before{
+        content: "";
+        position: absolute;
+        right: 40%;
+        top: -78%;
+        width: 0;
+        height: 0;
+        border-left: 19px solid transparent;
+        border-bottom: 26px solid white;
+        border-right: 19px solid transparent;
+    }
+    .alertbox1{
+        width: 200px;
+        text-align: center;
+        background: rgba(255, 255, 255);
+        padding: 10px 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        right: 107px;
+        top: 290px;
+       visibility: hidden;
+    }
+    .alertbox1::before{
+        content: "";
+        position: absolute;
+        right: 40%;
+        top: -100%;
+        width: 0;
+        height: 0;
+        border-left: 19px solid transparent;
+        border-bottom: 26px solid white;
+        border-right: 19px solid transparent;
+    }
+    .alertbox2{
+        width: 200px;
+        text-align: center;
+        background: rgba(255, 255, 255);
+        padding: 10px 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        right: 107px;
+        top: 290px;
+       visibility: hidden;
+    }
+    .alertbox2::before{
+        content: "";
+        position: absolute;
+        right: 40%;
+        top: -78%;
+        width: 0;
+        height: 0;
+        border-left: 19px solid transparent;
+        border-bottom: 26px solid white;
+        border-right: 19px solid transparent;
+    }
+    .alertbox4{
+        width: 200px;
+        text-align: center;
+        background: rgba(255, 255, 255);
+        padding: 10px 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        right: 107px;
+        top: 290px;
+       visibility: hidden;
+    }
+    .alertbox4::before{
+        content: "";
+        position: absolute;
+        right: 40%;
+        top: -78%;
+        width: 0;
+        height: 0;
+        border-left: 19px solid transparent;
+        border-bottom: 26px solid white;
+        border-right: 19px solid transparent;
+    }
+    .alertbox3{
+        width: 200px;
+        text-align: center;
+        background: rgba(255, 255, 255);
+        padding: 10px 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #000;
+        position: absolute;
+        right: 107px;
+        top: 358px;
+       visibility: hidden;
+    }
+    .alertbox3::before{
+        content: "";
+        position: absolute;
+        right: 40%;
+        top: -78%;
+        width: 0;
+        height: 0;
+        border-left: 19px solid transparent;
+        border-bottom: 26px solid white;
+        border-right: 19px solid transparent;
+    }
 }
