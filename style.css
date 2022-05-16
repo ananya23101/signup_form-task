@@ -402,7 +402,7 @@ input::placeholder{
     border-right: 26px solid white;
     border-bottom: 19px solid transparent;
 }
-@keyframes animate1 {
+/* @keyframes animate1 {
     0%,100%{
         transform: translateY(-20px);
        
@@ -426,4 +426,7 @@ input::placeholder{
     50%{
         transform: translateY(40px);
     }
+} */
+@media screen and (max-width: 800px) {
+    
 }
